@@ -1,0 +1,151 @@
+:root{
+    --primary-color: #303030;
+    --secondary-color:#b50202;
+}
+
+
+.navBar{
+    width: 100%;
+    background-color:rgba(34, 34, 34, 0.1);;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.navBar a{
+    color: white;
+}
+.home{
+    background-color: var(--primary-color);
+}
+.brand {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+.brand:hover{
+    color: white;
+}
+.bg-image{
+    width: 100%; 
+    height: 600px;
+    position: relative;
+    filter: blur(5px);
+}
+.poster-image {
+    position: absolute ;
+    left: -100px;
+    right: 50%;
+    bottom: 100%;
+    top: -470px;
+    z-index: 1;
+}
+.poster-image img{
+    border-radius: 5%;
+    width: 300px;
+    height: 450px;
+}
+.description{
+    color: white;
+    position: absolute ;
+    right: -100px;
+    top: -800%;
+    bottom: 50%;
+    text-align:left;
+    z-index: 1;
+    margin-top: 10px;
+}
+.description a{
+    text-decoration: none;
+}
+.home-button{
+    color: white;
+    background-color: var(--secondary-color);
+    border-radius: 20%;
+    padding: 10px 50px;
+    margin: 10px;
+}
+.home-button:hover{
+    background-color: #d30303;
+}
+
+.navTab{
+    background-color: var(--primary-color);
+}
+.navTab a{
+    color: white;
+}
+.popular-cards a img{
+    height: 385px;
+}
+.popular-cards a img:hover{
+    border: #747474 solid 2px ;
+}
+.popular-cards{
+    color: white;
+}
+.popular-cards h4,h6{
+    margin: 10px;
+}
+
+.action-movies a img{
+    height: 385px;
+}
+.action-movies a img:hover{
+    border: #747474 solid 2px ;
+}
+.action-movies{
+    color: white;
+}
+.action-movies h4,h6{
+    margin: 10px;
+}
+.nav-active {
+    position: relative;
+}
+
+.nav-active::after .active{
+    position: absolute;
+    content: '';
+    width: 65px;
+    height:3px;
+    background-color: red;
+    bottom: 10%;
+    left: 10%;
+    border-radius: 10%;
+
+}
+.tabs{
+    background-color: var(--primary-color);
+}
+.tab-link a:hover{
+    color: var(--secondary-color);
+}
+
+.movies-list{
+    background-color: #414141;
+}
+.movies-list h2{
+    margin-top: 0; 
+}
+.movies-list-cards a img{
+    height: 350px;
+}
+
+.section-title{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:728px)  {
+
+    .popular-cards a img{
+        height: 100%;
+    }
+
+    
+}

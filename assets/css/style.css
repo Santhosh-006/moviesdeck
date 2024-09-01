@@ -67,7 +67,12 @@
 .home-button:hover{
     background-color: #d30303;
 }
-
+.disabled-btn{
+    background-color: grey;
+}
+.disabled-btn:hover{
+    background-color: grey;
+}
 .navTab{
     background-color: var(--primary-color);
 }
@@ -122,28 +127,49 @@
 }
 
 .movies-list{
+    color: white;
     background-color: #414141;
-}
-.movies-list h2{
-    margin-top: 0; 
+    padding: 30px;
 }
 .movies-list-cards a img{
     height: 350px;
 }
 
+.movies-list-cards a img:hover{
+    border: #747474 solid 2px ;
+}
+
+.movies-list-cards h4,h6{
+    margin: 10px;
+}
+
 .section-title{
+    color: var(--secondary-color);
     text-align: center;
 }
 
 footer{
+    color: white;
+    background-color: var(--primary-color);
     text-align: center;
 }
-
+.icon{
+    width: max-content;
+    font-size: 25px;
+    margin-right: 20px;
+    color: var(--secondary-color);
+}
 
 
 @media screen and (max-width:728px)  {
 
     .popular-cards a img{
+        height: 100%;
+    }
+    .action-movies a img{
+        height: 100%;
+    }
+    .movies-list-cards a img{
         height: 100%;
     }
 
